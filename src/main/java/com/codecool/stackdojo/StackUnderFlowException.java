@@ -1,6 +1,6 @@
 package com.codecool.stackdojo;
 
-public class StackUnderFlowException extends Exception {
+public class StackUnderFlowException extends RuntimeException {
 
     public StackUnderFlowException() {
         super();

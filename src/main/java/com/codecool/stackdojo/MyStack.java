@@ -8,7 +8,7 @@ public class MyStack<E> {
         stackArray = (E[]) new Object[size];
     }
 
-    public void push(E item) throws StackOverFlowException {
+    public void push(E item) {
         Integer nullItemsIndex = size();
         if (nullItemsIndex.equals(stackArray.length)) {
             throw new StackOverFlowException("Stack is full. You cannot add any more items");
@@ -17,7 +17,7 @@ public class MyStack<E> {
         }
     }
 
-    public E pop() throws StackUnderFlowException {
+    public E pop() {
         int nullItemsIndex = size();
         if (nullItemsIndex > 0) {
             E itemToPop = stackArray[nullItemsIndex - 1];
@@ -30,7 +30,7 @@ public class MyStack<E> {
     }
 
 
-    public E peek() throws StackUnderFlowException {
+    public E peek() {
         int nullItemsIndex = size();
         if (nullItemsIndex > 0) {
             return stackArray[nullItemsIndex - 1];
