@@ -1,6 +1,6 @@
 package com.codecool.stackdojo;
 
-public class MyStack<E> {
+public class MyStack<E extends Object> {
 
     E[] stackArray;
 
